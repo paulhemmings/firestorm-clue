@@ -1,0 +1,84 @@
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+a {
+  text-decoration: underline;
+  color: #039BE5;
+}
+
+.setup-section {
+    display: none;
+}
+
+.game-section {
+    padding:1em;
+}
+
+.game-element-details {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1em 2em;
+    min-width: 2em;
+}
+
+.game-element {
+    color: black;
+    font-size: large;
+}
+.game-element.option-selected {
+    color: red;
+}
+.game-element .shown-button {
+    display:none;
+}
+
+.response-element {
+    display:inline-block;
+    margin: 1em 2em;
+    color: blue;
+    min-width: 2em;
+    font-size: large;
+}
+
+.individial-response {
+    font-size: smaller;
+}
+/*
+.response-element button {
+    font-size: 18px;
+    border: 2px solid gray;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+.response-element button:active {
+    font-size: 18px;
+    border: 2px solid red;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+}
+*/
+
+.list-container, .responses-container {
+    display: none;
+    margin: 1em 0em;
+}
+
+.title_box {
+    border: #3c5a86 1px dotted;
+}
+
+.title_box #title {
+    position: relative;
+    top : -0.5em;
+    margin-left: 1em;
+    display: inline;
+    background-color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.title_box #content {
+}

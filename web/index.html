@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Pico</title>
+        <!-- Web Application Manifest -->
+        <link rel="manifest" href="/manifest.json">
+        <!-- Material Design Lite  -->
+        <link rel="stylesheet" href="/bower_components/material-design-lite/material.min.css">
+        <script defer src="/bower_components/material-design-lite/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- Styling -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth:700">
+        <link rel="stylesheet" href="/styles/main.css">
+    </head>
+    <body>
+
+        <section id="Game Setup">
+            <button id="define-game">Set up</button>
+        </section>
+
+        <section class='game-section setup-section'>
+            <div>
+                <h3>players</h3>
+                <label>list player names seperated with spaces or commas</label>
+                <input size="50" type="text" id="player-list" />
+                <button id="add-players">Add players</button>
+            </div>
+            <div>
+                <h3>choices</h3>
+                <label>Locations</label>
+                <input size="50" type="text" id="location-list" />
+                <button id="add-locations">Add locations</button>
+            </div>
+            <div>
+                <label>Weapons</label>
+                <input size="50" type="text" id="weapon-list" />
+                <button id="add-weapons">Add weapons</button>
+            </div>
+            <div>
+                <label>Suspects</label>
+                <input size="50" type="text" id="suspect-list" />
+                <button id="add-suspects">Add suspects</button>
+            </div>
+        </section>
+
+        <section id="in turn">
+        </section>
+
+        <section class="game-section" id="in-play">
+
+            <div class="title_box list-container players-container">
+                <div id="title">Players</div>
+                <div class="content">
+                </div>
+            </div>
+            <div class="title_box list-container locations-container">
+                <div id="title">Locations</div>
+                <div class="content">
+                </div>
+            </div>
+            <div class="title_box list-container weapons-container">
+                <div id="title">Weapons</div>
+                <div class="content">
+                </div>
+            </div>
+            <div class="title_box list-container suspects-container">
+                <div id="title">Suspects</div>
+                <div class="content">
+                </div>
+            </div>
+            <div class="title_box responses-container">
+                <div id="title">Response</div>
+                <div class="content">
+                </div>
+            </div>
+            <div class="title_box list-container shown-card-option-container">
+                <div id="title">Select card shown</div>
+                <div class="content">
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- libraries -->
+        <script src="/bower_components/page/page.js"></script>
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+
+        <!-- firebase -->
+        <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyCgPQWdHpnh8bWQDYPEKsvYsAHOVly1W3U",
+            authDomain: "pico-fe080.firebaseapp.com",
+            databaseURL: "https://pico-fe080.firebaseio.com",
+            storageBucket: "pico-fe080.appspot.com",
+            messagingSenderId: "772485491985"
+          };
+          firebase.initializeApp(config);
+        </script>
+
+        <!-- scripts -->
+        <script src="/scripts/game.js"></script>
+
+    </body>
+</html>
